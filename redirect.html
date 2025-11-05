@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF--8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecionando...</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .spinner {
+            border-top-color: #25D366;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="text-center p-8">
+        <div class="spinner w-16 h-16 border-8 border-gray-300 border-solid rounded-full mx-auto mb-6"></div>
+        <p class="text-gray-700 text-lg font-medium">
+            Aguarde um momento...<br>
+            Você será direcionado(a) automaticamente para o nosso grupo.
+        </p>
+    </div>
+
+    <script>
+        setTimeout(function() {
+            window.location.replace('https://chat.whatsapp.com/Ey8YDUZXrI7AWaY9EU7gi0');
+        }, 3000);
+    </script>
+</body>
+</html>
